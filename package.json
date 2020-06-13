@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "pre-deploy": "npm run build && mkdir -p docs/ && cp -r public/ docs/"
   },
   "husky": {
     "hooks": {

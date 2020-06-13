@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let name, frameworks, tools, languages, interests;\n</script>\n\n<style>\n  main {\n    text-align: center;\n    padding: 1em;\n    max-width: 240px;\n    margin: 0 auto;\n  }\n\n  h1 {\n    color: #ff3e00;\n    text-transform: uppercase;\n    font-size: 2.5em;\n    font-weight: 100;\n  }\n\n  .home-main-description {\n    max-width: 900px;\n    margin: 100px auto;\n  }\n\n  .home-main-description p {\n    padding-left: 10px;\n    text-align: left;\n  }\n\n  @media (min-width: 640px) {\n    main {\n      max-width: none;\n    }\n  }\n</style>\n\n<main>\n  <h1>Hello, I am {name}!</h1>\n  <div class=\"home-main-description\">\n    <p>Well, I have been busy</p>\n    <p>writing production apps in these languages: {languages.join(', ')}</p>\n    <p>using these frameworks: {frameworks.join(', ')}</p>\n    <p>with some of these really cool tools: {tools.join(', ')}</p>\n    <p>while learning more about: {interests.join(', ')}</p>\n  </div>\n  <a\n    href=\"mailto:website@natachatomkinson.co.uk\"\n    target=\"_blank\"\n    rel=\"noopener noreferrer\">\n    Email me\n  </a>\n</main>\n"
+  ],
+  "names": [],
+  "mappings": "AAKE,IAAI,4BAAC,CAAC,AACJ,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,CAAC,CAAC,IAAI,AAChB,CAAC,AAED,EAAE,4BAAC,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,SAAS,CAAE,KAAK,CAChB,WAAW,CAAE,GAAG,AAClB,CAAC,AAED,sBAAsB,4BAAC,CAAC,AACtB,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,KAAK,CAAC,IAAI,AACpB,CAAC,AAED,oCAAsB,CAAC,CAAC,cAAC,CAAC,AACxB,YAAY,CAAE,IAAI,CAClB,UAAU,CAAE,IAAI,AAClB,CAAC,AAED,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzB,IAAI,4BAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AACjB,CAAC,AACH,CAAC"
+}
