@@ -93,49 +93,48 @@ var app = (function () {
   function C(s, a, l, c, u, f, d = [-1]) {
     const h = p;
     m(s);
-    const g = a.props || {},
-      $ = (s.$$ = {
-        fragment: null,
-        ctx: null,
-        props: f,
-        update: t,
-        not_equal: u,
-        bound: n(),
-        on_mount: [],
-        on_destroy: [],
-        before_update: [],
-        after_update: [],
-        context: new Map(h ? h.$$.context : []),
-        callbacks: n(),
-        dirty: d,
-        skip_bound: !1,
-      });
-    let y = !1;
+    const g = (s.$$ = {
+      fragment: null,
+      ctx: null,
+      props: f,
+      update: t,
+      not_equal: u,
+      bound: n(),
+      on_mount: [],
+      on_destroy: [],
+      before_update: [],
+      after_update: [],
+      context: new Map(h ? h.$$.context : []),
+      callbacks: n(),
+      dirty: d,
+      skip_bound: !1,
+    });
+    let $ = !1;
     if (
-      (($.ctx = l
-        ? l(s, g, (t, e, ...n) => {
+      ((g.ctx = l
+        ? l(s, a.props || {}, (t, e, ...n) => {
             const o = n.length ? n[0] : e;
             return (
-              $.ctx &&
-                u($.ctx[t], ($.ctx[t] = o)) &&
-                (!$.skip_bound && $.bound[t] && $.bound[t](o), y && E(s, t)),
+              g.ctx &&
+                u(g.ctx[t], (g.ctx[t] = o)) &&
+                (!g.skip_bound && g.bound[t] && g.bound[t](o), $ && E(s, t)),
               e
             );
           })
         : []),
-      $.update(),
-      (y = !0),
-      o($.before_update),
-      ($.fragment = !!c && c($.ctx)),
+      g.update(),
+      ($ = !0),
+      o(g.before_update),
+      (g.fragment = !!c && c(g.ctx)),
       a.target)
     ) {
       if (a.hydrate) {
         const t = (function (t) {
           return Array.from(t.childNodes);
         })(a.target);
-        $.fragment && $.fragment.l(t), t.forEach(i);
-      } else $.fragment && $.fragment.c();
-      a.intro && (b = s.$$.fragment) && b.i && (z.delete(b), b.i(k)),
+        g.fragment && g.fragment.l(t), t.forEach(i);
+      } else g.fragment && g.fragment.c();
+      a.intro && (y = s.$$.fragment) && y.i && (z.delete(y), y.i(b)),
         (function (t, n, s) {
           const {
             fragment: a,
@@ -152,7 +151,7 @@ var app = (function () {
         })(s, a.target, a.anchor),
         w();
     }
-    var b, k;
+    var y, b;
     m(h);
   }
   function N(e) {
