@@ -6,7 +6,15 @@ const app = new App({
     name: "Natacha Tomkinson",
     languages: ["Javascript", "Node", "Ruby", "Elixir"],
     frameworks: ["React", "Rails", "Phoenix"],
-    tools: ["intellij", "vscode", "github", "docker", "docker-compose", "aws"],
+    tools: [
+      "intellij",
+      "vscode",
+      "github",
+      "docker",
+      "docker-compose",
+      "aws",
+      "zoxide",
+    ],
     interests: ["C", "Svelte"],
   },
 });
