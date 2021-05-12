@@ -35,7 +35,7 @@
     "xo": "^0.37.1"
   },
   "dependencies": {
-    "postcss": "^8.2.8",
+    "postcss": "^8.2.10",
     "sirv-cli": "^0.4.4"
   },
   "engines": {
